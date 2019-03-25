@@ -27,3 +27,15 @@ console.log('running');
 
 
 
+const rainbowColors = ["red", "orange", "yellow", "green", "Blue", "purple"];
+
+console.log(rainbowColors[4]);
+
+const ben = {
+    location: "Denver",
+    hobby: "Photography",
+    favoriteFood: "Carbonara",
+    favoriteDataType: "Boolean",
+}
+
+console.log(ben.hobby);
