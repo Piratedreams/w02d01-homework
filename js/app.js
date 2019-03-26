@@ -238,12 +238,15 @@ const bondFilms = [{
 ];
 
 
-let bondTitles = []
+let bondTitles = [];
 for (let i = 0; i < bondFilms.length; i++) {
-    // bondFilms[i].title = bondTitles[i];
     bondTitles.push(bondFilms[i].title);
 } 
-
-
-
 console.log(bondTitles);
+let oddBonds = [];
+for (let i = 0; i < bondFilms.length; i++) {
+    if( bondFilms[i].year % 2 !== 0) {
+        oddBonds.push(bondFilms[i].year);
+    }
+}
+console.log(oddBonds);
