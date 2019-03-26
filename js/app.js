@@ -250,3 +250,14 @@ for (let i = 0; i < bondFilms.length; i++) {
     }
 }
 console.log(oddBonds);
+let grossSum = 0;
+
+for (let i = 0; i< bondFilms.length; i++){
+      bondFilms[i].gross = bondFilms[i].gross.replace("$", "");
+      bondFilms[i].gross = bondFilms[i].gross.replace(",", "");
+
+        grossSum = grossSum += parseInt(bondFilms[i].gross);
+}
+      console.log(grossSum);
+
+
